@@ -4,14 +4,22 @@
 #define MAX_ITEMS 50
 
 typedef struct {
-    char name[50];
+    char name[64];
     int quantity;
     double price;
+    double subtotal;
 } CartItem;
 
-extern CartItem cart[MAX_ITEMS];
-extern int cart_count;
+typedef struct {
+    CartItem items[MAX_ITEMS];
+    int count;
+    double total;
+} Cart;
 
-void add_to_cart(const char *name, int qty, double price);
+/* Cart functions */
+void cart_init(Cart *c);
+void cart_add_item(Cart *c, const char *name, double price);
+void cart_remove_item(Cart *c, const char *name);
+void save_cart_to_file(Cart *c, const char *filename);
 
-#endif
+#endif /* CART_H */

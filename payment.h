@@ -1,6 +1,9 @@
 #ifndef PAYMENT_H
 #define PAYMENT_H
 
-void show_payment_window();
+#include <gtk/gtk.h>
+#include "cart.h"
 
-#endif
+void show_payment_window(double total);
+
+#endif /* PAYMENT_H */

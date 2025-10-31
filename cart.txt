@@ -1,0 +1,12 @@
+Shopping Cart Summary
+---------------------
+Item: Banana | Qty: 3 | Price: ₹30.00 | Subtotal: ₹90.00
+Item: Apple | Qty: 1 | Price: ₹50.00 | Subtotal: ₹50.00
+
+Total Amount: ₹140.00
+---------------------
+
+--- Payment Completed ---
+Card (last4): 1486
+Paid: ₹140.00
+Status: SUCCESS
